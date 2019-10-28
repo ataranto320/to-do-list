@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import Todos from './Todos';
-// import React from 'react';
-// import logo from './logo.svg';
-// import './App.css';
 
 class App extends Component {
   state = {
@@ -14,9 +11,12 @@ class App extends Component {
       {id: 5, content: "rewatch all Star Wars movies before Ep. IX"}
     ]
   }
+  deleteTodo = (id) => {
+    console.log(id);
+  }
   render() {
     return (
-      <div className="App">
+      <div className="todo-app conatiner">
         <h1 className="center blue-text">Todos</h1>
         <Todos todos={this.state.todos}/>
       </div>
