@@ -5,7 +5,9 @@ class AddTodo extends Component {
     render(){
         return (
             <div>
-                <form onSubmit={}></form>
+                <form onSubmit={}>
+                    <label>Add New Todo:</label>
+                </form>
             </div>
         )
     }
