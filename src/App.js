@@ -21,7 +21,9 @@ class App extends Component {
     })
   }
   addTodo = (todo) => {
-
+    todo.id = Math.random()
+    // new array - taking ids and dropping them to this array
+    let todos = [...this.state.todos, todo];
   }
   render() {
     return (
