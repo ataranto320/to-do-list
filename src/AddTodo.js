@@ -13,7 +13,7 @@ class AddTodo extends Component {
         // prevent default of form being submitted 
         e.preventDefault();
         //submit todo to output DOM
-        console.log(this.state)
+        this.props.addTodo(this.state)
     }
     // render jsx template
     render(){
