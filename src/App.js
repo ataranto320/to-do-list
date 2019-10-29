@@ -25,6 +25,7 @@ class App extends Component {
       <div className="todo-app conatiner">
         <h1 className="center blue-text">Todos</h1>
         <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+        <AddTodo />
       </div>
     )
   }
