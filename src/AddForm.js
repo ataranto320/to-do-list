@@ -27,3 +27,5 @@ class AddTodo extends Component {
         )
     }
 }
+
+export AddTodo
