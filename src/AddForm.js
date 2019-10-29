@@ -9,6 +9,10 @@ class AddTodo extends Component {
             content: e.target.value
         })
     }
+    handleSubmit = (e) => {
+        // prevent default of form being submitted 
+        e.preventDefault();
+    }
     // render jsx template
     render(){
         return (
