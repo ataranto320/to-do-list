@@ -12,6 +12,8 @@ class AddTodo extends Component {
     handleSubmit = (e) => {
         // prevent default of form being submitted 
         e.preventDefault();
+        //submit todo to output DOM
+        console.log(this.state)
     }
     // render jsx template
     render(){
