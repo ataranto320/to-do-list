@@ -13,7 +13,10 @@ class AddTodo extends Component {
         // prevent default of form being submitted 
         e.preventDefault();
         //submit todo to output DOM
-        this.props.addTodo(this.state)
+        this.props.addTodo(this.state);
+        this.setState({
+            content: ''
+        })
     }
     // render jsx template
     render(){
@@ -21,7 +24,7 @@ class AddTodo extends Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Add New Todo:</label>
-                    <input type="text" onChange={this.handleChange} />
+                    <input type="text" onChange={this.handleChange} value={this.state.content}/>
                 </form>
             </div>
         )

@@ -24,6 +24,9 @@ class App extends Component {
     todo.id = Math.random()
     // new array - taking ids and dropping them to this array
     let todos = [...this.state.todos, todo];
+    this.setState({
+      todos
+    })
   }
   render() {
     return (
