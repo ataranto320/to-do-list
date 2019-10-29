@@ -28,4 +28,4 @@ class AddTodo extends Component {
     }
 }
 
-export AddTodo
+export default AddTodo
