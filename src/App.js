@@ -28,11 +28,23 @@ class App extends Component {
       todos
     })
   }
+  // setUpdate = (text, id) => {
+  //   const todos = this.state.todos;
+  //   todos.map(todos =>{
+  //     if(todos.id === id){
+  //       todos.text=text;
+  //     }
+  //   })
+  //   this.setState({
+  //     todos
+  //   })
+  // }
   render() {
     return (
       <div className="todo-app conatiner">
         <h1 className="center blue-text">Todos</h1>
-        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo} setUpdate={this.setUpdate}/>
+        <Todos todos={this.state.todos} deleteTodo={this.deleteTodo}/>
+        {/* setUpdate={this.setUpdate}/> */}
         <AddTodo addTodo={this.addTodo}/>
       </div>
     )

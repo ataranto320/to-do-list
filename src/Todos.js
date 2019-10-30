@@ -5,9 +5,9 @@ const Todos = ({todos, deleteTodo, setUpdate}) => {
         todos.map(todo => {
             return (
                 <div className="collection-item" key={todo.id}>
-                    <input type="text" id={todo.key} value={todo.text} onChange={(e)=>{
+                    {/* <input type="text" id={todo.key} value={todo.text} onChange={(e)=>{
                         todos.setUpdate(e.target.value,todo.key)
-                    }}/>
+                    }}/> */}
                     <span onClick={() => {deleteTodo(todo.id)}}>{todo.content}</span>
                 </div>
             )
