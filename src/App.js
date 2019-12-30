@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Todos from './Todos';
 import AddTodo from './AddTodo';
 
+
 class App extends Component {
   state = {
     todos: [
@@ -29,7 +30,7 @@ class App extends Component {
     })
   }
   // setUpdate = (text, id) => {
-  //   const todos = this.state.todos;
+  //   let todos = this.state.todos;
   //   todos.map(todos =>{
   //     if(todos.id === id){
   //       todos.text=text;
