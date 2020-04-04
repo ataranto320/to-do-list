@@ -5,7 +5,8 @@
   "private": true,
   "dependencies": {
     "acorn": "^7.1.1",
-    "handlebars": "^4.7.3",
+    "handlebars": "^4.7.6",
+    "kind-of": "^6.0.3",
     "minimist": "^1.2.5",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
